@@ -1,38 +1,34 @@
-@popcolor: #99FF99;
+@popcolor: #5EA14D;
 @backgroundcolor: #FFFFFA;
 @textcolor: #101010;
-@bodycolor: #DADAFF;
-@fancytext: 'Indie Flower', cursive;
+@bodycolor: #4D7BA1;
+@fancytext: 'Noto Serif', serif;
 @generictext: 'Titillium Web', sans-serif;
 
 body {
 	background-color: @backgroundcolor;
 }
 
-h1 {
-	color: @backgroundcolor;
+.navbar {
+	background-color: @popcolor;
+	border-color: @popcolor;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+}
+
+h1, h2 {
+	color: @popcolor;
 	font-family: @fancytext;
 }
 
-.page-header {
+.btn-primary {
 	background-color: @popcolor;
-	text-align: center;
+	border-color: @popcolor;
 }
 
-.page-header h1 {
-	font-size: 70px;
-}
-
-.nav-pills {
+.btn-primary:hover {
 	background-color: @bodycolor;
-	font-family: @generictext;
-}
-
-.nav-pills>li.active>a {
-	background-color: @popcolor;
-}
-
-.paragraphguy {
-	background-color: @bodycolor;
-	font-family: @generictext;
+	border-color: @bodycolor;
 }
